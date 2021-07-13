@@ -88,6 +88,8 @@ ul,ol{
     color: #E02C6D;
     text-shadow: 3px 3px 4px rgba(0,0,0,0.06);
 }
+.Development-content button,
+.Academy-info button,
 .highlights-info button,
 .banner-content button{
     border:none;
@@ -107,6 +109,8 @@ ul,ol{
 .banner-content button span{
     padding-left: 7px;
 }
+.Development-content button:hover,
+.Academy-info button:hover,
 .highlights-info button:hover,
 .banner-content button:hover{
     background:#023047;
@@ -216,7 +220,8 @@ ul,ol{
 
 /* highlights part start*/
 #highlights{
-    background: #022824;
+    background: #071e31a4;
+    box-shadow:20px 20px 40px rgba(0, 0, 0.1);
     padding: 50px 0;
 }
 .highlights-content{
@@ -231,6 +236,7 @@ ul,ol{
 .highlights-info h2 span{
     color: #E02C6D;
 }
+.Academy-info article,
 .highlights-info article{
     font-size:16px;
     color: #ddd;
@@ -240,8 +246,65 @@ ul,ol{
     width: 100%;
     height:427px;
 }
-
 /* highlights part end*/
+/* Academy part start */
+#Academy{
+    background:#010b13;
+    padding:40px 0;
+}
+.Academy-content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Academy-img img{
+    width: 100%;
+    height:100%;
+}
+.Academy-info{
+   background: #071e31a4;
+   padding: 30px;
+   box-shadow:20px 20px 40px rgba(0,0,0.1)
+}
+.Development-content h6,
+.Academy-info h6{
+    font-size:16px;
+    color: #E02C6D;
+    font-weight:400;
+    letter-spacing:1px;
+}
+.Development-content h2,
+.Academy-info h2{
+    color: #fff;
+    font-size:48px;
+    line-height: 55px;
+    padding-bottom: 10px;
+}
+.Development-content h2 span,
+.Academy-info h2 span{
+    color: #E02C6D;
+}
+/* Academy part start end */
+/* Development part start */
+#development{
+    background:url(../img/banner2.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height:100vh;
+}
+.development-info{
+    width: 100%;
+   display:flex;
+   justify-content:space-between;
+}
+.empty{
+    width: 60%;
+}
+.Development-content{
+    width: 40%;
+    padding-top:80px;
+}
+/* Development part end */
 /* footer part start */
 #footer{
     padding: 50px 0;
