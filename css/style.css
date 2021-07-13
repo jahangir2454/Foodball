@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins',
     sans-serif;
-    overflow-x:hidden;
 }
+
 a{
     text-decoration: none;
 }
@@ -74,8 +74,9 @@ ul,ol{
    flex-wrap: wrap;
 }
 .banner-content{
-    width: 50%;
+    width: 47%;
     z-index: 1;
+    margin-right: 3%;
 }
 .banner-content h1{
     font-size: 64px;
@@ -87,6 +88,7 @@ ul,ol{
     color: #E02C6D;
     text-shadow: 3px 3px 4px rgba(0,0,0,0.06);
 }
+.highlights-info button,
 .banner-content button{
     border:none;
     outline:none;
@@ -101,16 +103,18 @@ ul,ol{
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
+.highlights-info button,
 .banner-content button span{
     padding-left: 7px;
 }
+.highlights-info button:hover,
 .banner-content button:hover{
     background:#023047;
     color: #fff;
     z-index: 10;
 }
 .banner-img{
-    width: 50%;
+    width: 47%;
 }
 .banner-img img{
     width: 100%;
@@ -124,8 +128,11 @@ ul,ol{
         transform:translate(0px);
     }
      50% {
-         transform: translate(-10px ,20px);
+         transform: translate(-20px );
      }
+       75% {
+           transform: translate(20px);
+       }
      100% {
          transform: translate(0px);
      }
@@ -206,6 +213,76 @@ ul,ol{
     box-shadow:4px 4px 6px rgba(14, 13, 13, 0.774)
 }
 /* players part end */
+
+/* highlights part start*/
+#highlights{
+    background: #022824;
+    padding: 50px 0;
+}
+.highlights-content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.highlights-info h2{
+   color: #fff;
+   font-size:48px;
+   font-weight: 600;
+}
+.highlights-info h2 span{
+    color: #E02C6D;
+}
+.highlights-info article{
+    font-size:16px;
+    color: #ddd;
+    line-height: 32px;
+}
+.highlights-img img{
+    width: 100%;
+    height:427px;
+}
+
+/* highlights part end*/
+/* footer part start */
+#footer{
+    padding: 50px 0;
+    background:#fff;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img{
+    width: 500px;
+}
+.footer-img img{
+    width: 100%;
+}
+.footer-social-icons{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.footer-social-icons a{
+    display: inline-block;
+    height:45px;
+    width: 45px;
+    background:#0096c7;
+    color: #fff;
+    border-radius:50%;
+    line-height:45px;
+    font-size:20px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.footer-social-icons a:hover{
+    background:#010b13;
+    transform: translatey(-7px);
+}
+.footer-copy-right{
+    text-align:center;
+}
+/* footer part end */
 
 
 
