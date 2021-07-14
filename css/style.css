@@ -1,3 +1,4 @@
+/* ============== common styles part start =================*/
 *{
     padding: 0;
     margin: 0;
@@ -5,20 +6,23 @@
     font-family: 'Poppins',
     sans-serif;
 }
-
 a{
     text-decoration: none;
 }
 ul,ol{
     list-style: none;
 }
-#top-header{
-    background:#0096c7;
-}
 .container{
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+}
+/* ============== common styles part end =================*/
+
+
+/* ============== heading part start =================*/
+#top-header {
+    background: #0096c7;
 }
 .menu-item{
     display: flex;
@@ -68,8 +72,11 @@ ul,ol{
     background:#023047;
     box-shadow:4px 4px 6px rgba(0, 0, 0, 0.37)
 }
+/* ============== heading part end =================*/
 
-/* banner part start */
+
+
+/*============== banner part start ==============*/
 #banner{
     background:#0096c7;
     overflow: hidden;
@@ -147,10 +154,13 @@ ul,ol{
          transform: translate(0px);
      }
 }
-/* banner part end */
-/* players part start */
+/*============== banner part end ==============*/
+
+
+
+/*============== players part start ==============*/
 #players{
-    background:#010b13;
+    background:#08070d;
     padding: 40px 0;
 }
 .players-heading h2 {
@@ -179,13 +189,18 @@ ul,ol{
     grid-column-gap: 19px;
 }
 .players-content{
-    background:#071e31a4;
+    background-color: rgba(128, 137, 164, 0.25);
     padding:15px ;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
 }
 .players-content:hover{
+    background: rgb(6, 48, 77);
     box-shadow: 20px 20px 40px rgba(0,0,0,1);
+    opacity: 0.8;
+}
+.players-content:hover h3{
+    color: #fff;
 }
 .players-content img{
     width: 100%;
@@ -196,6 +211,7 @@ ul,ol{
     color: #E02C6D;
     font-weight: 600;
     padding: 10px 0;
+    transition: 0.5s ease-in-out;
 }
 .players-content p{
     font-size:16px;
@@ -222,9 +238,9 @@ ul,ol{
     background:#023047;
     box-shadow:4px 4px 6px rgba(14, 13, 13, 0.774)
 }
-/* players part end */
+/*============== players part end ==============*/
 
-/* highlights part start*/
+/*============== highlights part start ==============*/
 #highlights{
     background: #071e31;
     box-shadow:20px 20px 40px rgba(0, 0, 0.1);
@@ -251,9 +267,13 @@ ul,ol{
 .highlights-img img{
     width: 100%;
     height:427px;
+    object-fit: cover;
 }
-/* highlights part end*/
-/* Academy part start */
+/*============== highlights part end ==============*/
+
+
+
+/*============== Academy part start ==============*/
 #Academy{
     background:#010b13;
     padding:40px 0;
@@ -265,6 +285,7 @@ ul,ol{
 .Academy-img img{
     width: 100%;
     height:100%;
+    object-fit:cover;
 }
 .Academy-info{
    background: #071e31a4;
@@ -289,8 +310,10 @@ ul,ol{
 .Academy-info h2 span{
     color: #E02C6D;
 }
-/* Academy part start end */
-/* gallery part start */
+/*============== Academy part start end ==============*/
+
+
+/*============== gallery part start ==============*/
 #gallery{
      background: #071e31;
      padding: 30px 0;
@@ -312,8 +335,10 @@ ul,ol{
 .gallery-img:hover img{
     transform: scale(1.2);
 }
-/* gallery part end */
-/* Development part start */
+/*============== gallery part end ==============*/
+
+
+/*============== Development part start ==============*/
 #development{
     background:url(../img/banner2.webp);
     background-repeat: no-repeat;
@@ -333,9 +358,11 @@ ul,ol{
     width: 40%;
     padding-top:80px;
 }
-/* Development part end */
-/*  */
-/* footer part start */
+/*============== Development part end ==============*/
+
+
+
+/*============== footer part start ==============*/
 #footer{
     padding: 50px 0;
     background:#fff;
@@ -383,8 +410,11 @@ ul,ol{
     font-weight:400;
     letter-spacing:1px;
 }
-/* footer part end */
-/* responsive part */
+/*============== footer part end ==============*/
+
+
+
+/*============== responsive part max-width 992px start ==============*/
 @media only screen and (max-width: 992px) {
     .banner-content h1 {
         font-size: 55px;
@@ -407,6 +437,7 @@ ul,ol{
            line-height: 43px;
    }
 }
+/*============== responsive part max-width 768px start ==============*/
 @media only screen and (max-width: 768px){
     .service ul{
         display:none;
@@ -436,7 +467,11 @@ ul,ol{
         font-size:14px;
         line-height:27px;
     }
+     #development {
+         display: none;
+     }
 }
+/*============== responsive part max-width 576px start ==============*/
 @media only screen and (max-width: 576px){
     .banner-content h1{
         font-size: 27px;
@@ -475,8 +510,12 @@ ul,ol{
          font-size: 14px;
      }
 }
+/*============== responsive part max-width 420px start ==============*/
 @media only screen and (max-width: 420px){
     .Development-content{
+        display:none;
+    }
+    #development {
         display:none;
     }
     .banner-content button {
