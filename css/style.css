@@ -189,7 +189,7 @@ ul,ol{
     grid-column-gap: 19px;
 }
 .players-content{
-    background-color: rgba(128, 137, 164, 0.25);
+    background-color: #0c2733;
     padding:15px ;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
