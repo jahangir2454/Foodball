@@ -475,6 +475,14 @@ ul,ol{
          font-size: 14px;
      }
 }
+@media only screen and (max-width: 420px){
+    .Development-content{
+        display:none;
+    }
+    .banner-content button {
+        margin:15px;
+    }
+}
 
 
 
